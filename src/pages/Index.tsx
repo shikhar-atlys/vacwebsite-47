@@ -1,13 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from "react";
+import Header from "@/components/sections/Header";
+import HeroSection from "@/components/sections/HeroSection";
+import ProcessSection from "@/components/sections/ProcessSection";
+import HistorySection from "@/components/sections/HistorySection";
+import CalculatorSection from "@/components/sections/CalculatorSection";
+import TrackingSection from "@/components/sections/TrackingSection";
+import BookingSection from "@/components/sections/BookingSection";
+import TrackingDetailsSection from "@/components/sections/TrackingDetailsSection";
+import FaqSection from "@/components/sections/FaqSection";
+import ContactSection from "@/components/sections/ContactSection";
+import Footer from "@/components/sections/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+      <main className="font-['Inter',sans-serif]">
+        <div className="max-w-[1200px] mx-auto my-0 p-5">
+          <Header />
+          <HeroSection />
+          <ProcessSection />
+          <HistorySection />
+          <CalculatorSection />
+          <TrackingSection />
+          <BookingSection />
+          <TrackingDetailsSection />
+          <FaqSection />
+          <ContactSection />
+          <Footer />
+        </div>
+      </main>
+    </>
   );
 };
 
