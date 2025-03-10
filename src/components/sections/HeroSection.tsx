@@ -12,8 +12,8 @@ const HeroSection: React.FC = () => {
           consular needs.
         </h2>
       </div>
-      <p className="max-w-[800px] text-[#666] text-base leading-[1.6] mx-auto my-0">
-        Simplifying your consular journey - whether you need a visa, passport,
+      <p className="max-w-[800px] text-[#666] text-base leading-[1.6] mx-auto my-0 bg-[#214872] text-white p-6 rounded">
+        Simplifying your consular journey—whether you need a visa, passport,
         or other services, we provide step-by-step guidance to make the process
         effortless. Explore our services below to get started.
       </p>
