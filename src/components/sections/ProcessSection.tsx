@@ -1,46 +1,92 @@
 import React from "react";
 import ProcessCard from "@/components/ui-custom/ProcessCard";
-import { Calendar, FileCheck, Clipboard, Check } from "lucide-react";
+import { Calendar, FileSearch, MapPin, CircleDollarSign } from "lucide-react";
 
 const ProcessSection: React.FC = () => {
   const processSteps = [
     {
       icon: Calendar,
       title: "Book an appointment",
-      description: "Schedule your slot at a time that suits you.",
+      description: "Schedule your visit in just a few clicks",
+      features: [
+        "Step-by-step booking guide",
+        "Easy online scheduling"
+      ]
     },
     {
-      icon: FileCheck,
+      icon: FileSearch,
       title: "Track Your Application",
-      description: "Monitor progress on your application status.",
+      description: "Stay updated on your application status",
+      features: [
+        "Real-time status updates",
+        "SMS & email notifications"
+      ]
     },
     {
-      icon: Clipboard,
-      title: "Get it sorted",
-      description: "We'll handle the complete application process for you.",
+      icon: MapPin,
+      title: "Find a centre",
+      description: "Locate the nearest application centre for you",
+      features: [
+        "Wide network of centres to choose from",
+        "Check real-time availability"
+      ]
     },
     {
-      icon: Check,
+      icon: CircleDollarSign,
       title: "Service fees",
-      description: "Transparent pricing with all inclusive services.",
+      description: "Transparent pricing for all consular services",
+      features: [
+        "Breakdown of applicable fees",
+        "Government of India payment links"
+      ]
     },
   ];
 
   return (
-    <section className="text-center px-0 py-[60px]" id="process">
-      <h2 className="text-2xl text-[#1a1a1a] mb-10">
-        Effortless and transparent consular services. Get started with a simple
-        step-by-step process.
-      </h2>
-      <div className="grid grid-cols-[repeat(4,1fr)] gap-[30px] mt-10 max-md:grid-cols-[repeat(2,1fr)] max-sm:grid-cols-[1fr]">
-        {processSteps.map((step, index) => (
+    <section className="py-16" id="process">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <span className="inline-block px-4 py-2 bg-gray-100 rounded-full text-sm font-medium mb-4">
+            Our services
+          </span>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+            Effortless and transparent consular services. Get started with a simple 
+            step-by-step process.
+          </h2>
+          <a href="#" className="inline-flex items-center text-blue-600 hover:underline">
+            All services <span className="ml-1">→</span>
+          </a>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* First row */}
           <ProcessCard
-            key={index}
-            icon={step.icon}
-            title={step.title}
-            description={step.description}
+            icon={processSteps[0].icon}
+            title={processSteps[0].title}
+            description={processSteps[0].description}
+            features={processSteps[0].features}
           />
-        ))}
+          <ProcessCard
+            icon={processSteps[1].icon}
+            title={processSteps[1].title}
+            description={processSteps[1].description}
+            features={processSteps[1].features}
+          />
+          
+          {/* Second row */}
+          <ProcessCard
+            icon={processSteps[2].icon}
+            title={processSteps[2].title}
+            description={processSteps[2].description}
+            features={processSteps[2].features}
+          />
+          <ProcessCard
+            icon={processSteps[3].icon}
+            title={processSteps[3].title}
+            description={processSteps[3].description}
+            features={processSteps[3].features}
+          />
+        </div>
       </div>
     </section>
   );
