@@ -5,10 +5,10 @@ const Header: React.FC = () => {
     <header className="flex justify-between items-center px-0 py-5">
       <div>
         <img
-          src="https://placehold.co/40x40/2B4570/2B4570"
+          src="/YusufBinaAhmad.svg"
           alt="Logo"
-          width={40}
-          height={40}
+          width={261}
+          height={65}
         />
       </div>
       <nav className="flex gap-[30px] max-sm:hidden">
