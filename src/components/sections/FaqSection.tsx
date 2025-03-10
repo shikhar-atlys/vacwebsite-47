@@ -28,7 +28,7 @@ const FaqSection: React.FC = () => {
   ];
 
   return (
-    <section className="px-0 py-[60px]" id="faq">
+    <section className="px-0 py-[60px] max-w-[1200px] mx-auto my-0 p-5" id="faq">
       <h2 className="text-2xl mb-[30px]">Have questions? We got answers.</h2>
       <div className="max-w-[800px] mx-auto my-0">
         {faqItems.map((item, index) => (

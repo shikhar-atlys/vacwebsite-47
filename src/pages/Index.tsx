@@ -19,7 +19,7 @@ const Index = () => {
         rel="stylesheet"
       />
       <main className="font-['Inter',sans-serif]">
-        <div className="max-w-[1200px] mx-auto my-0 p-5">
+        <div className="">
           <Header />
           <HeroSection />
           <ProcessSection />

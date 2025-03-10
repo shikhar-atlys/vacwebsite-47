@@ -43,7 +43,7 @@ const ProcessSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16" id="process">
+    <section className="py-16 max-w-[1200px] mx-auto my-0 p-5" id="process">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-2 bg-gray-100 rounded-full text-sm font-medium mb-4">

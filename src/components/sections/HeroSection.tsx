@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="text-center px-0 py-[60px]" id="hero">
+    <section className="text-center px-0 py-[60px] max-w-[1200px] mx-auto my-0 p-5" id="hero">
       <div>
         <h1 className="text-[32px] font-semibold text-[#1a1a1a] mb-5 max-sm:text-2xl">
           Seamless Indian Visa & Passport Services in Seoul

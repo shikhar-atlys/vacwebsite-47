@@ -2,7 +2,7 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="flex justify-between items-center px-0 py-5">
+    <header className="flex justify-between items-center px-0 py-5 max-w-[1200px] mx-auto my-0 p-5">
       <div>
         <img
           src="/YusufBinaAhmad.svg"
